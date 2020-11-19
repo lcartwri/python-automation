@@ -1,6 +1,6 @@
 import requests
 import json
-from auth.vmanage_auth import login
+from auth.vmanage_auth import *
 
 def get_devicecontrollers():
     session = login()

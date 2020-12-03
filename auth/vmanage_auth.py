@@ -22,11 +22,11 @@ def login():
     login_response = session.post(url, data=body, verify=False)
 
     if b'<html>' in login_response.content:
-        print("Login Failed")
+        #print("Login Failed")
         import sys
         sys.exit(0)
     else:
-        print("Login succeeded")
+        #print("Login succeeded")
         return session
                 
 if __name__ == "__main__":
